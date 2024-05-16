@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Узнайте, насколько хорошо вы знаете JavaScript, пройдя наш опрос.">
+    <title>Опрос: Как хорошо вы знаете JS?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Опрос: Как хорошо вы знаете JS?</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <p class="form-text">Пройдите наш опрос, чтобы узнать, насколько хорошо вы знаете JavaScript. Пожалуйста, заполните все поля формы.</p>
+            <form id="js-quiz-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Возраст:</label>
+                    <input type="number" id="age" name="age" placeholder="Ваш возраст" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Опыт работы с JS:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="" disabled selected>Выберите...</option>
+                        <option value="beginner">Начинающий</option>
+                        <option value="intermediate">Средний</option>
+                        <option value="advanced">Продвинутый</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Как часто вы используете JS?</legend>
+                    <label><input type="radio" name="frequency" value="daily" required> Ежедневно</label>
+                    <label><input type="radio" name="frequency" value="weekly" required> Еженедельно</label>
+                    <label><input type="radio" name="frequency" value="monthly" required> Ежемесячно</label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label><input type="checkbox" name="subscribe" value="yes"> Подписаться на рассылку</label>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Ваши комментарии"></textarea>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
